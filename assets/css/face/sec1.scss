@@ -1,0 +1,92 @@
+@import "../style-main.scss";
+
+.wrapper-img-left {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper-img-left_img {
+  width: 100%;
+  height: 216px;
+  background-repeat: no-repeat;
+  background-size: 103%;
+  background-position: center center;
+}
+
+.wrapper-btn-text_title {
+  @include fluidFontSize(18px, 24x, 480px, 1280px, 20px);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.wrapper-btn-text_list {
+  margin-bottom: 2.4rem;
+  padding-left: 0px;
+  list-style-type: none;
+  @include fluidFontSize(12px, 14x, 480px, 1280px, 13px);
+  li{
+    margin-bottom: .6rem;
+  }
+}
+
+.wraper-img-left-text-right {
+  @extend %flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper-btn-text {
+  padding: 0 15px;
+  align-self: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .wrapper-img-left {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .wrapper-img-left {
+    width: 500px;
+    position: absolute;
+    left: 0;
+  }
+  .wraper-img-left-text-right {
+    justify-content: flex-end;
+  }
+  .wrapper-img-left_img {
+    height: 280px;
+  }
+  .wraper-img-left-text-right_revers {
+    flex-direction: row-reverse;
+  }
+  .wrapper-img-left_revers {
+    right: 0;
+    left: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wraper-img-left-text-right {
+    height: 550px;
+  }
+  .wrapper-img-left {
+    width: 615px;
+    align-self: center;
+  }
+  .wrapper-img-left_img {
+    height: 415px;
+  }
+  .wrapper-btn-text {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .wrapper-img-left {
+    width: 800px;
+  }
+  .wrapper-img-left_img {
+    height: 430px;
+  }
+}

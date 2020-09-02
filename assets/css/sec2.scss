@@ -1,0 +1,87 @@
+@import "style-main.scss";
+
+
+.subtitle {
+  @include fluidFontSize(14px, 16px, 480px, 1280px, 14px);
+  @include fluidMarginBottom(30px, 50px, 480px, 1280px, 40px);
+  line-height: 1.2;
+  color: #828282;
+}
+
+.wrapper-bg-text {
+  width: 190px;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.wrapper-bg-text:hover .wrapper-bg-text_bg {
+  transform: scale(1.1);
+}
+
+.wrapper-bg-text_bg {
+  background-position: center center;
+  background-size: 106%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  @extend %flex;
+  justify-content: center;
+  transition: 1.5s;
+}
+
+.wrapper-bg-text_text {
+  position: relative;
+  font-weight: bold;
+  width: 110px;
+  color: #FFFFFF;
+  align-self: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wrapper-scroll {
+  padding: 0 15px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.scroll-body {
+  width: 660px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 990px) {
+  .wrapper-bg-text {
+    width: 250px;
+    height: 250px;
+  }
+  .scroll-body {
+    width: 100%;
+    height: 260px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper-scroll {
+    overflow-x: hidden;
+    height: 350px;
+  }
+  .wrapper-bg-text {
+    width: 330px;
+    height: 330px;
+  }
+  .scroll-body {
+    justify-content: space-between;
+  }
+  .wrapper-bg-text_text {
+    font-size: 21px;
+    width: 190px;
+  }
+
+}

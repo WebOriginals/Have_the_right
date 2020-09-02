@@ -1,0 +1,66 @@
+.sec-sl-1-about{
+    padding: 50px 0;
+}
+.wrapper-sl-1-about{
+    position: relative;
+    height: 100%;
+}
+
+.sl-1-about-container {
+    width: 100%;
+    height: 100%;
+}
+.sl-1-about-slide {
+    display: flex;
+}
+.sl-1-about-slide img{
+    width: 100%;
+}
+.sl-1-about-button-next,
+.sl-1-about-button-prev {
+   display: none;
+}
+@media only screen and (min-width: 767px) {
+
+    .sl-1-about-container {
+        padding-bottom: 70px;
+    }
+
+    .sl-1-about-button-next,
+    .sl-1-about-button-prev {
+        top: 94%;
+        display: block;
+    }
+
+    .sl-1-about-button-next:focus,
+    .sl-1-about-button-prev:focus {
+        outline: none;
+    }
+
+    .sl-1-about-button-next,
+    .swiper-container-rtl .sl-1-about-button-prev {
+        right: 43%;
+        width: 47px;
+    }
+
+    .sl-1-about-button-prev,
+    .swiper-container-rtl .sl-1-about-button-next {
+        left: 43%;
+        width: 47px;
+    }
+}
+@media only screen and (min-width: 990px){
+    .sl-1-about-button-next,
+    .sl-1-about-button-prev {
+        top: 90%;
+    }
+    .sl-1-about-button-next,
+    .swiper-container-rtl .sl-1-about-button-prev {
+        right: 43%;
+
+    }
+    .sl-1-about-button-prev,
+    .swiper-container-rtl .sl-1-about-button-next {
+        left: 43%;
+    }
+}

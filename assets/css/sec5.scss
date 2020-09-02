@@ -1,0 +1,23 @@
+@import "style-main.scss";
+
+.wrapper-form-title{
+  text-align: center;
+  @include fluidFontSize(24px, 36px, 480px, 1280px, 30px);
+  margin-bottom: 1rem;
+  color: $color-title;
+  font-weight: 300;
+}
+.wrapper-form-subtitle{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.input-phone::placeholder{
+  text-align: center;
+  font-size: 16px;
+  color: #BDBDBD;
+}
+@media only screen and (min-width: 990px) {
+  .input-phone::placeholder{
+    text-align: left;
+  }
+}

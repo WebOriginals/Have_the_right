@@ -1,0 +1,37 @@
+@import "../style-main.scss";
+
+.body-teachers{
+  @extend %flex;
+  padding: 0 15px;
+  width: 100%
+}
+.wrapper-teachers{
+  width: 100%;
+}
+.wrapper-teachers_title{
+  @include fluidFontSize(21px, 24px, 480px, 1280px, 22px);
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.wrapper-teachers{
+  margin-bottom: 40px;
+}
+.wrapper-teachers:last-child{
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 990px) {
+  .body-teachers{
+    justify-content: space-between;
+  }
+  .wrapper-teachers{
+    width: 45%;
+  }
+
+}
+@media only screen and (min-width: 990px) {
+
+  .wrapper-teachers{
+    width: 33%;
+  }
+
+}

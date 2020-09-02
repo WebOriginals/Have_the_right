@@ -1,0 +1,30 @@
+@import "style-main.scss";
+.wrapper-img-about-us{
+  height: 100%;
+  @extend %flex;
+}
+.wrapper-img-about-us_img{
+  width: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 5px;
+
+}
+.wrapper-img-about-us_img--mb{
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 990px) {
+  .wrapper-img-about-us_img{
+    width: 96%;
+  }
+  .wrapper-img-about-us_img{
+    height: 340px;
+  }
+
+  .wrapper-img-about-us_img{
+    align-self: center;
+  }
+}

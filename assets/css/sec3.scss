@@ -1,0 +1,50 @@
+@import "style-main.scss";
+
+.wrapper-ic-title-text {
+  @extend %flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.wrapper-ic-title-text_icon {
+  width: 80px;
+  height: 80px;
+  background: #828282;
+  margin-right: 1rem;
+  align-self: center;
+  text-align: center;
+}
+
+.wrapper-title-text {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper-title-text_title {
+  font-weight: bold;
+  @include fluidFontSize(16px, 21px, 480px, 1280px, 18px);
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+.wrapper-title-text_text{
+  @include fluidFontSize(14px, 16px, 480px, 1280px, 15px);
+  color: #828282;
+}
+@media only screen and (min-width: 767px) {
+  .wrapper-title-text {
+    width: 84%;
+    text-align: left;
+  }
+  .wrapper-title-text_title {
+    margin-top: 0;
+  }
+  .wrapper-ic-title-text_icon {
+    margin-right: 1.5rem;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .wrapper-title-text {
+    width: 76%;
+
+  }
+}

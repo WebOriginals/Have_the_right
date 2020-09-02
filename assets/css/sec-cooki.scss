@@ -1,0 +1,47 @@
+.sec-cooki {
+  z-index: 999;
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+
+}
+
+.body-cooki {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 98%;
+  border-radius: 5px;
+  background: #3B398B;
+  padding: 25px;
+  color: #fff;
+  margin: auto;
+}
+.body-cooki {
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .textik {
+    width: 70%;
+  }
+  .body-cooki {
+    .wrapper-btn {
+      width: 27%;
+      align-self: center;
+    }
+    a{
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .body-cooki {
+    .wrapper-btn {
+      width: 20%;
+    }
+  }
+}

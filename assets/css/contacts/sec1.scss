@@ -1,0 +1,63 @@
+@import "../style-main.scss";
+
+.body-contacts {
+  @extend %flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.wrapper-data {
+  @extend %flex;
+}
+
+.wrapper-data_icon {
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.wrapper-data {
+  margin-bottom: 23px;
+}
+
+.wrapper-data:last-child {
+  margin-bottom: 0;
+}
+
+.soc {
+  @extend %flex;
+  margin-top: 30px;
+
+  .soc_item {
+    margin-right: 25px;
+  }
+}
+
+.wrapper-contacts {
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+.wrapper-data_text{
+  width: 87%;
+}
+@media only screen and (max-width: 330px) {
+  .wrapper-data_text {
+    width: 245px;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+
+  .wrapper-contacts {
+    padding: 0;
+  }
+  .wrapper-contacts {
+    width: 30%;
+    margin-bottom: 0;
+    align-self: center;
+  }
+  .soc {
+    margin-top: 50px;
+  }
+
+}

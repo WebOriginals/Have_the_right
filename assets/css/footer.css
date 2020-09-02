@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.sec {
+  padding: 50px 0;
+  overflow: hidden; }
+
+.sec-internal {
+  padding: 0  0 50px;
+  overflow: hidden; }
+
+.footer {
+  padding: 30px 0; }
+
+.sec-form {
+  padding: 70px 0 100px; }
+
+@media only screen and (min-width: 990px) {
+  .footer {
+    padding: 50px 0 10px; } }
+
+@media only screen and (min-width: 1200px) {
+  .sec {
+    padding: 75px 0; }
+  .sec-internal {
+    padding: 30px  0 75px;
+    overflow: hidden; } }
+
+.no-scroll {
+  height: 100vh;
+  overflow: hidden; }
+
+.main-btn {
+  text-align: center;
+  width: 265px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #E40000;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  margin-top: 1rem; }
+  .main-btn:hover {
+    background: #3B398B; }
+
+.main-btn--width {
+  width: 100%; }
+
+.wrapper-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+a {
+  color: #26356B; }
+
+a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+a:focus {
+  text-decoration: none;
+  color: inherit; }
+
+.wrapper-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #26356B;
+  margin-bottom: 1rem; }
+  @media (min-width: 480px) {
+    .wrapper-title {
+      font-size: 30px;
+      font-size: calcFluidFontSize(24px, 36px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-title {
+      font-size: 36px; } }
+
+.wrapper-title_size {
+  font-size: 18px; }
+  @media (min-width: 480px) {
+    .wrapper-title_size {
+      font-size: 25px;
+      font-size: calcFluidFontSize(18px, 36px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-title_size {
+      font-size: 36px; } }
+
+.wrapper-title_mb {
+  margin-bottom: 30px; }
+  @media (min-width: 480px) {
+    .wrapper-title_mb {
+      margin-bottom: 40px;
+      margin-bottom: calcFluidMarginBottom(30px, 50px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-title_mb {
+      margin-bottom: 50px; } }
+
+.wrapper-title_mb-subtitle {
+  margin-bottom: 20px; }
+  @media (min-width: 480px) {
+    .wrapper-title_mb-subtitle {
+      margin-bottom: 20px;
+      margin-bottom: calcFluidMarginBottom(20px, 20px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-title_mb-subtitle {
+      margin-bottom: 20px; } }
+
+.wrapper-title_mb-bread-crumb {
+  margin-bottom: 20px; }
+  @media (min-width: 480px) {
+    .wrapper-title_mb-bread-crumb {
+      margin-bottom: 20px;
+      margin-bottom: calcFluidMarginBottom(20px, 20px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-title_mb-bread-crumb {
+      margin-bottom: 20px; } }
+
+.wrapper-text-about-us_text {
+  font-size: 14px; }
+  @media (min-width: 480px) {
+    .wrapper-text-about-us_text {
+      font-size: 14px;
+      font-size: calcFluidFontSize(14px, 16px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-text-about-us_text {
+      font-size: 16px; } }
+
+.wrapper-text-about-us_text--mb {
+  margin-bottom: 40px; }
+
+.wrapper-little-title {
+  font-size: 21px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 30px; }
+  @media (min-width: 480px) {
+    .wrapper-little-title {
+      font-size: 23px;
+      font-size: calcFluidFontSize(21px, 24px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-little-title {
+      font-size: 24px; } }
+  @media (min-width: 480px) {
+    .wrapper-little-title {
+      margin-bottom: 35px;
+      margin-bottom: calcFluidMarginBottom(30px, 50px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-little-title {
+      margin-bottom: 50px; } }
+
+.margin-0 {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.polit {
+  font-size: 12px;
+  color: #333333;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1.5rem; }
+  .polit a {
+    color: #26356B;
+    text-decoration: underline; }
+
+.desktop {
+  display: none; }
+
+@media only screen and (max-width: 767px) {
+  .main-btn__width {
+    width: 190px !important; }
+  .padding-l-0 {
+    padding-left: 0; }
+  .padding-r-0 {
+    padding-right: 0; }
+  .padding-l-15 {
+    padding-left: 1rem; }
+  .padding-r-15 {
+    padding-right: 1rem; } }
+
+@media only screen and (min-width: 990px) {
+  .main-btn {
+    margin-top: 0; }
+  .mobile {
+    display: none; }
+  .desktop {
+    display: block; }
+  .main-btn__width {
+    width: 212px; } }
+
+@media only screen and (min-width: 1200px) {
+  .main-btn__width {
+    width: 265px; } }
+
+.footer {
+  background: #26356B;
+  color: #FFFFFF; }
+  .footer a {
+    color: #FFFFFF; }
+
+.wrapper-footer-logo_img svg {
+  width: 100%; }
+
+.wrapper-list-footer_item {
+  font-weight: bold;
+  font-size: 16px;
+  padding: .5rem;
+  display: block; }
+
+.wrapper-list-footer_item-inline-block {
+  display: inline-block; }
+
+.wrapper-sublist-footer_item {
+  font-size: 16px;
+  padding: .3rem; }
+
+.wrapper-sublist-footer_item:last-child {
+  margin-bottom: 1rem; }
+
+.wrapper-list-footer_item-underline {
+  border-bottom: 2px solid #FFFFFF; }
+
+.wrapper-soc {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 3rem; }
+  .wrapper-soc .wrapper-soc_item {
+    margin: 0.5rem; }
+
+.wrapper-contact {
+  margin: 1rem 0;
+  text-align: center; }
+  .wrapper-contact .wrapper-contact_items {
+    padding: .5rem; }
+
+.wrapper-politik-footer {
+  text-align: center;
+  text-decoration: underline;
+  padding: 3rem 0;
+  font-size: 14px; }
+  @media (min-width: 480px) {
+    .wrapper-politik-footer {
+      font-size: 14px;
+      font-size: calcFluidFontSize(14px, 16px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-politik-footer {
+      font-size: 16px; } }
+
+.wrapper-lab {
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.wrapper-copir {
+  text-align: center;
+  font-size: 12px; }
+  @media (min-width: 480px) {
+    .wrapper-copir {
+      font-size: 14px;
+      font-size: calcFluidFontSize(12px, 16px, 480px, 1280px, px); } }
+  @media (min-width: 1280px) {
+    .wrapper-copir {
+      font-size: 16px; } }
+
+@media only screen and (min-width: 990px) {
+  .wrapper-politik-footer {
+    text-align: left; }
+  .wrapper-copir {
+    text-align: left; }
+  .wrapper-lab {
+    text-align: right; }
+  .f-pad {
+    padding: 0; }
+  .wrapper-list-footer_item {
+    font-weight: bold;
+    font-size: 16px;
+    padding: .5rem;
+    display: inline-block; }
+  .wrapper-soc {
+    margin-top: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .wrapper-contact {
+    text-align: right;
+    font-size: 15px; } }

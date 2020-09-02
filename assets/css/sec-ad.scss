@@ -1,0 +1,44 @@
+@import "style-main.scss";
+
+.wrapper-advantages {
+  @extend %flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-advantages {
+  width: 200px;
+  @extend %flex;
+  justify-content: center;
+  margin-bottom: 2.6rem;
+}
+
+.item-advantages_img {
+  width: 80px;
+  height: 80px;
+  align-self: center;
+  text-align: center;
+}
+
+.item-advantages_title {
+  text-align: center;
+  @include fluidFontSize(16px, 18px, 480px, 1280px, 16px);
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
+
+@media only screen and (min-width: 990px) {
+  .wrapper-advantages {
+    justify-content: space-between;
+  }
+  .item-advantages {
+    width: 185px;
+  }
+  .item-advantages_img {
+    width: 100px;
+    height: 100px;
+  }
+  .item-advantages_title {
+    height: 80px;
+  }
+}

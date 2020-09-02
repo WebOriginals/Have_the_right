@@ -1,0 +1,91 @@
+@import "style-main.scss";
+
+.footer{
+  background: #26356B;
+  color: #FFFFFF;
+
+  a{
+    color: #FFFFFF;
+  }
+}
+.wrapper-footer-logo_img svg{
+  width: 100%;
+}
+.wrapper-list-footer_item{
+  font-weight: bold;
+  font-size: 16px;
+  padding: .5rem;
+  display: block;
+}
+.wrapper-list-footer_item-inline-block{
+  display: inline-block;
+}
+.wrapper-sublist-footer_item{
+  font-size: 16px;
+  padding: .3rem;
+}
+.wrapper-sublist-footer_item:last-child{
+  margin-bottom: 1rem;
+}
+.wrapper-list-footer_item-underline{
+  border-bottom: 2px solid #FFFFFF;
+}
+.wrapper-soc{
+  @extend %flex;
+  justify-content: center;
+  margin-top: 3rem;
+  .wrapper-soc_item{
+    margin: 0.5rem;
+  }
+}
+.wrapper-contact{
+  margin: 1rem 0;
+  text-align: center;
+
+  .wrapper-contact_items{
+    padding: .5rem ;
+  }
+}
+.wrapper-politik-footer{
+  text-align: center;
+  text-decoration: underline;
+  padding: 3rem 0;
+  @include fluidFontSize(14px, 16px, 480px, 1280px, 14px);
+}
+.wrapper-lab{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.wrapper-copir{
+  text-align: center;
+  @include fluidFontSize(12px, 16px, 480px, 1280px, 14px);
+}
+
+@media only screen and (min-width: 990px) {
+  .wrapper-politik-footer{
+    text-align: left;
+  }
+  .wrapper-copir{
+    text-align: left;
+  }
+  .wrapper-lab{
+    text-align: right;
+  }
+  .f-pad{
+    padding: 0;
+  }
+  .wrapper-list-footer_item{
+    font-weight: bold;
+    font-size: 16px;
+    padding: .5rem;
+    display: inline-block;
+  }
+  .wrapper-soc{
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+  .wrapper-contact{
+    text-align:right;
+    font-size: 15px;
+  }
+}

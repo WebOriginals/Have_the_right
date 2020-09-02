@@ -1,0 +1,156 @@
+.margin-l-n {
+  margin: 0 0 -1rem 0 !important; }
+
+.application-header {
+  border: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0; }
+  .application-header .close {
+    padding: 1rem;
+    position: absolute;
+    z-index: 99; }
+
+.modal input,
+.modal textarea {
+  margin-bottom: 1rem; }
+
+.top {
+  margin: -67px 0 0 !important;
+  outline: none; }
+
+.title-modi,
+.text-modi {
+  text-align: center; }
+
+button:active,
+button:focus,
+button:hover {
+  outline: none;
+  border: none; }
+
+.application-dialog {
+  margin: 0; }
+
+.application-content {
+  height: 100vh;
+  overflow: hidden; }
+
+.modal-body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .modal-body .application {
+    position: relative;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+
+.sub_modal-title {
+  font-size: 12px;
+  margin-bottom: 1rem; }
+
+.modal-title {
+  margin-bottom: 1rem; }
+
+.politics {
+  font-weight: 300;
+  font-size: 12px; }
+
+.body-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.wrapper-modal-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  color: #26356B; }
+
+.sub_modal-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px; }
+
+.wrapper-polit {
+  margin: 20px 0; }
+
+.application-body {
+  padding: 0; }
+
+input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #BDBDBD; }
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #BDBDBD; }
+
+input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #BDBDBD; }
+
+input::placeholder {
+  font-size: 16px;
+  color: #BDBDBD; }
+
+.body-form_items-inp {
+  padding: 0 50px; }
+
+@media only screen and (min-width: 767px) {
+  .application-content {
+    height: auto; }
+  .application-dialog {
+    max-width: 730px;
+    margin: 2rem auto; }
+  .wrapper-img-modal {
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -1px;
+    width: 100%;
+    top: 0; } }
+
+@media only screen and (min-width: 990px) {
+  .body-form_items-img {
+    width: 40%;
+    position: relative; }
+  .body-form_items-inp {
+    width: 60%; }
+  .application-dialog {
+    max-width: 970px; }
+  .application {
+    position: relative;
+    width: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  .wrapper-input {
+    width: 86%; }
+  .wrapper-polit {
+    width: 86%; }
+  .body-form_items-inp {
+    padding: 90px 50px; }
+  .wrapper-polit {
+    margin: 30px 0; }
+  .sub_modal-title {
+    margin-bottom: 50px; }
+  .wrapper-modal-title {
+    font-size: 36px; }
+  .application-dialog {
+    max-width: 860px;
+    margin: 4rem auto 0; }
+    .application-dialog .wrapper-title {
+      margin-bottom: 1rem; } }

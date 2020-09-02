@@ -1,0 +1,45 @@
+@import "../style-main.scss";
+
+.body-skills {
+  @extend %flex;
+  width: 100%;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+.wrapper-skills{
+  margin-bottom: 2rem;
+}
+.wrapper-skills_icon-text {
+  @extend %flex;
+  margin-bottom: 1rem;
+
+  .icon-text_text {
+    @include fluidFontSize(13px, 16x, 480px, 1280px, 14px);
+    width: 80%;
+    margin-left: 1rem;
+    align-self: center;
+    img{
+      align-self: center;
+    }
+  }
+}
+
+.wrapper-skills_title {
+  @include fluidFontSize(16px, 21x, 480px, 1280px, 18px);
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 990px) {
+  .wrapper-skills{
+    width: 48%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper-skills_title {
+    margin-bottom: 2rem;
+  }
+  .wrapper-skills{
+    width: 45%;
+  }
+}

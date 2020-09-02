@@ -1,0 +1,66 @@
+@import "../style-main.scss";
+
+.body-img-title-text{
+  @extend %flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.sec-1{
+  padding: 60px 0 40px;
+}
+.body-img-title-text{
+  width: 100%;
+}
+.wrapper-img-title-text{
+  width: 100%;
+}
+.wrapper-img-title-text:first-child{
+  margin-bottom: 4rem;
+}
+.picture{
+  width: 100%;
+  height: 216px;
+  background-position: left;
+  background-size: 103%;
+  background-repeat: no-repeat;
+}
+.padding{
+  padding: 0 15px;
+}
+.wrapper-img-title-text_title{
+  @include fluidFontSize(18px, 24x, 480px, 1280px, 20px);
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.wrapper-img-title-text_text{
+  @include fluidFontSize(12px, 16x, 480px, 1280px, 14px);
+}
+@media only screen and (min-width: 767px) {
+  .wrapper-img-title-text{
+    padding: 0 15px;
+    width: 50%;
+  }
+  .wrapper-img-title-text{
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .picture{
+    height: 350px;
+  }
+  .picture.height{
+    height: 240px;
+  }
+
+  .wrapper-img-title-text:first-child{
+    margin-bottom: 0;
+  }
+
+  .padding{
+    padding: 0 0;
+  }
+  .wrapper-img-title-text{
+    width: 45%;
+  }
+}
